@@ -26,10 +26,3 @@ jobs:
                 context: .
                 push: true
                 tags: vanloic/craftech:${{ github.sha }}
-
-    docker-run:
-        needs: [ docker-build ]
-        runs-on: ubuntu-latest
-        name: Docker run
-        steps:
-            - run: docker run vanloic/craftech:${{ github.sha }}
