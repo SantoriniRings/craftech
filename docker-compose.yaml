@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  nginx:
+    image: "vanloic/craftech:latest"  # Asegúrate de cambiar 'tu_usuario/tu_repositorio' por tu información real
+    ports:
+      - "80:80"
