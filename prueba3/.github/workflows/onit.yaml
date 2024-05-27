@@ -3,7 +3,7 @@ name: ci
 on:
     push:
         paths:
-            - "index.html"
+            - "prueba3/index.html"
 
 jobs:
     docker-build:
