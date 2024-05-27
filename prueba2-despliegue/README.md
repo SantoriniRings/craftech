@@ -43,3 +43,7 @@ La aplicación es un pequeño CRUD de y su función es crear Tareas para ayudar 
 - **docker-compose.yml**: Archivo de configuración de Docker Compose para orquestar los servicios.
 
 
+### Justificación
+Decidí usar docker-compose ya que el proyecto era lo suficientemente simple para no requerir otras funcionalidades que posee algún otro orquestador
+como Kubernetes y sin embargo cumpla la función de organizar todo el despliegue.
+
