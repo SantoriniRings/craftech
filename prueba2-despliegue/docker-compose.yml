@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./backend
+    command: gunicorn django_crud_api.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./backend:/app-back
+    ports:
+      - "8000:8000"
+    depends_on:
+      - front
+
+  front:
+    build: ./frontend
+    volumes:
+      - ./frontend:/app-front
+    ports:
+      - "5173:80"
