@@ -22,7 +22,7 @@ jobs:
             - name: Build and Push
               uses: docker/build-push-action@v3
               with:
-                file: Dockerfile
-                context: .
+                file: prueba3/Dockerfile
+                context: prueba3
                 push: true
                 tags: vanloic/craftech:${{ github.sha }}
